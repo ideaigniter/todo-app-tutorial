@@ -11,4 +11,5 @@
 8. Clear `app.component.ts` and add `Hello world` text
 9. Create hello-world component with angular CLI and dry run `ng g c hello-world --d`
 10. Add `hello-world` component to `app.component.html`
-11. Modify router outlet and add `hello-world` route to `hello-world` component
+11. Modify router and add `hello-world` route to `hello-world` component, Add router outlet
+12. Create goodbye-world component with angular CLI and dry dun `ng g c goodbye-world --d`
