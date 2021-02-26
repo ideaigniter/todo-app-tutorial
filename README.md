@@ -16,3 +16,5 @@
 13. Modify router and add `goodbye-world` route to `goodbye-world` component
 14. Generate todo module with angular CLI `ng g m todo --d --routing=true`
 15. Create `todo/list` component with angular CLI `ng g c todo/list`
+16. Create route for `todo` module
+17. Import `todo` module to `app` module

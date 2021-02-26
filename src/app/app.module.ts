@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HelloWorldComponent } from './hello-world/hello-world.component';
 import { GoodbyeWorldComponent } from './goodbye-world/goodbye-world.component';
+import { TodoModule } from './todo/todo.module';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { GoodbyeWorldComponent } from './goodbye-world/goodbye-world.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    TodoModule
   ],
   providers: [],
   bootstrap: [AppComponent]
