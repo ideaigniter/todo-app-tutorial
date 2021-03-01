@@ -1,0 +1,70 @@
+.container {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  width: 720px;
+  margin: 50px auto;
+}
+
+.container h1 {
+  text-align: center;
+}
+
+.container .task-list {
+  border: 1px solid #efefef;
+  border-radius: 5px;
+  box-shadow: 4px 4px 5px #e6e6e6;
+}
+
+.container .task-list .task {
+  min-height: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border-bottom: 1px solid #efefef;
+}
+
+.container .task-list .task:last-child {
+  border-bottom: none;
+}
+
+.container .task-list .task .task__index {
+  width: 50px;
+  color: #a5a5a5;
+}
+
+.container .task-list .task .task__title {
+  width: 100%;
+  padding-right: 30px;
+  color: #565656;
+  font-weight: 700;
+}
+
+.container .task-list .task .task__actions {
+  width: 240px;
+}
+
+.container .task-list .task .task__actions button {
+  border-radius: 3px;
+  font-size: 16px;
+  color: white;
+  padding: 5px 15px;
+}
+
+.container .task-list .task .task__actions button.done {
+  background: #6ddcae;
+  border: 1px solid #4ad26c;
+  margin-right: 15px;
+}
+
+.container .task-list .task .task__actions button.view {
+  background: #6d80dc;
+  border: 1px solid #4a61d2;
+}
+
+.container .task-list .task .task__actions button:hover,
+.container .task-list .task .task__actions button:focus,
+.container .task-list .task .task__actions button:active {
+  opacity: 0.7;
+  cursor: pointer;
+}
