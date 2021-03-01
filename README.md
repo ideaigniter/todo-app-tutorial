@@ -22,3 +22,4 @@
 19. Add `ngFor` loop in list component
 20. Add CSS and HTML for `todo` list component
 21. Create `ng g c todo/list-item` 
+22. Add mark as done functionality and styling for `todo` list

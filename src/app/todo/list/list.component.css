@@ -38,6 +38,21 @@
   padding-right: 30px;
   color: #565656;
   font-weight: 700;
+  position: relative;
+}
+
+.container .task-list .task .task__title.done {
+  opacity: 0.5;
+ }
+
+.container .task-list .task .task__title.done::after {
+  width: calc(100% - 30px);
+  position: absolute;
+  top: 50%;
+  left: 0;
+  height: 1px;
+  background: black;
+  content: "";
 }
 
 .container .task-list .task .task__actions {
@@ -49,6 +64,12 @@
   font-size: 16px;
   color: white;
   padding: 5px 15px;
+  cursor: pointer;
+}
+
+.container .task-list .task .task__actions button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
 }
 
 .container .task-list .task .task__actions button.done {
@@ -66,5 +87,4 @@
 .container .task-list .task .task__actions button:focus,
 .container .task-list .task .task__actions button:active {
   opacity: 0.7;
-  cursor: pointer;
 }

@@ -3,10 +3,10 @@
   <div class="task-list">
     <div class="task" *ngFor="let task of tasks; index as i">
       <span class="task__index">#{{ i }}</span>
-      <span class="task__title">{{ task.title }}</span>
+      <span class="task__title" [ngClass]="{ 'done': task.isDone }">{{ task.title }}</span>
       <span class="task__actions">
-        <button class="done">Done!</button>
-        <button class="view">View</button>
+        <button [disabled]="task.isDone" class="done" (click)="markTaskAsDone(task.id)">Done!</button>
+        <button [disabled]="task.isDone" class="view">View</button>
       </span>
     </div>
   </div>
