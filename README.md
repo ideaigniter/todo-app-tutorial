@@ -18,3 +18,4 @@
 15. Create `todo/list` component with angular CLI `ng g c todo/list`
 16. Create route for `todo` module
 17. Import `todo` module to `app` module
+18. Add task list in component
