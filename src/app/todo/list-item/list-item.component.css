@@ -1,0 +1,47 @@
+.container {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  width: 720px;
+  margin: 50px auto;
+}
+
+.container h1 {
+  text-align: center;
+}
+
+.container .task-details {
+  padding: 15px 30px;
+  min-height: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #efefef;
+  border-radius: 5px;
+  box-shadow: 4px 4px 5px #e6e6e6;
+  margin-bottom: 30px;
+}
+
+.container button {
+  border-radius: 3px;
+  font-size: 16px;
+  color: white;
+  padding: 5px 15px;
+  cursor: pointer;
+}
+
+.container button.done {
+  background: #6ddcae;
+  border: 1px solid #4ad26c;
+  margin-left: 15px;
+}
+
+.container button.back {
+  background: #6d80dc;
+  border: 1px solid #4a61d2;
+}
+
+.container button:hover,
+.container button:focus,
+.container button:active {
+  opacity: 0.7;
+}

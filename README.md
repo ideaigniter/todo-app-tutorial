@@ -23,3 +23,4 @@
 20. Add CSS and HTML for `todo` list component
 21. Create `ng g c todo/list-item` 
 22. Add mark as done functionality and styling for `todo` list
+23. Add `task-item` route and CSS and HTML
