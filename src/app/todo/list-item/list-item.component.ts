@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { ListService, Task } from '../list.service';
 
 @Component({
   selector: 'app-list-item',
@@ -7,9 +9,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListItemComponent implements OnInit {
 
-  constructor() { }
+  public task: Task | undefined;
+
+  constructor(
+    private listService: ListService,
+    private route: ActivatedRoute
+    ) { }
 
   ngOnInit(): void {
+    this.route.params.subscribe(({ id }) => {
+      this.task = this.listService.getTaskById(id);
+    })
   }
-
 }

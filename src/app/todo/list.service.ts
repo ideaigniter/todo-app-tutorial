@@ -21,6 +21,10 @@ export class ListService {
   public getAllTasks(): Task[] {
     return this.tasks;
   }
+
+  public getTaskById(id: number): Task | undefined {
+    return this.tasks.find((task) => task.id == id);
+  }
 }
 
 export interface Task {

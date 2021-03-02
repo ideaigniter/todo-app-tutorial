@@ -1,7 +1,7 @@
-<div class="container">
-  <h1>Task #1</h1>
+<div class="container" *ngIf="task">
+  <h1>Task # {{ task.id }}</h1>
   <div class="task-details">
-    <p>Lorem ipsum dolor</p>
+    <p>{{ task.title }}</p>
   </div>
   <button class="back">Back</button>
   <button class="done">Done!</button>

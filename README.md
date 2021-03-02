@@ -27,3 +27,4 @@
 24. Create list service with angular CLI `ng g s todo/list`
 25. Move logic to list service
 26. Implement `getAllTasks` method in list service
+27. Implement `getTaskById` logic and print data in `task-item` component
