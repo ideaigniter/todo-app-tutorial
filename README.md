@@ -24,3 +24,4 @@
 21. Create `ng g c todo/list-item` 
 22. Add mark as done functionality and styling for `todo` list
 23. Add `task-item` route and CSS and HTML
+24. Create list service with angular CLI `ng g s todo/list`
