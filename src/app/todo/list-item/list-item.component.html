@@ -3,6 +3,6 @@
   <div class="task-details">
     <p>{{ task.title }}</p>
   </div>
-  <button class="back">Back</button>
-  <button class="done">Done!</button>
+  <button class="back" [routerLink]="['/list']">Back</button>
+  <button class="done" (click)="markTaskAsDone(task.id)" [disabled]="task.isDone">Done!</button>
 </div>

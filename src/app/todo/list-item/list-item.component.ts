@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { ListService, Task } from '../list.service';
 
 @Component({
@@ -13,12 +13,18 @@ export class ListItemComponent implements OnInit {
 
   constructor(
     private listService: ListService,
-    private route: ActivatedRoute
+    private route: ActivatedRoute,
+    private router: Router
     ) { }
 
   ngOnInit(): void {
     this.route.params.subscribe(({ id }) => {
       this.task = this.listService.getTaskById(id);
     })
+  }
+
+  public markTaskAsDone(id: number): void {
+    this.listService.markTaskAsDone(id);
+    this.router.navigate(['list']);
   }
 }
