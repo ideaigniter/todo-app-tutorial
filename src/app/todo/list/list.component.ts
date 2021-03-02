@@ -13,6 +13,7 @@ export class ListComponent implements OnInit {
   constructor(private listService: ListService) {}
 
   ngOnInit(): void {
+    this.tasks = this.listService.getAllTasks();
   }
 
   markTaskAsDone(id: number): void {

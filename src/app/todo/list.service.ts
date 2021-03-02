@@ -17,6 +17,10 @@ export class ListService {
       task.isDone = true;
     }
   }
+
+  public getAllTasks(): Task[] {
+    return this.tasks;
+  }
 }
 
 export interface Task {

@@ -26,3 +26,4 @@
 23. Add `task-item` route and CSS and HTML
 24. Create list service with angular CLI `ng g s todo/list`
 25. Move logic to list service
+26. Implement `getAllTasks` method in list service
