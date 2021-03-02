@@ -31,3 +31,4 @@
 28. Implement `markTaskAsDone` logic in `task-item` component
 29. Generate list form component with angular CLI `ng g c todo/list-form`
 30. Add `list-form` component HTML and CSS
+31. Add add task logic and reactive form 

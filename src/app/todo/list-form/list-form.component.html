@@ -1,4 +1,4 @@
-<form>
-  <input type="text" placeholder="title">
-  <button>Add!</button>
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+  <input type="text" placeholder="title" formControlName="title" required minlength="1">
+  <button type="submit">Add!</button>
 </form>
